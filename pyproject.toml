@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "substrai-agentdeploy"
+version = "0.1.0"
+description = "Zero-to-production AI agent deployment framework"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Gaurav Kumar Sinha", email = "gaurav@substrai.dev"}]
+keywords = ["ai-agent", "deployment", "serverless", "lambda", "llm", "multi-tenancy", "production"]
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+aws = ["boto3>=1.28.0"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+agentdeploy = "agentdeploy.cli.main:main"
+
+[project.urls]
+Homepage = "https://github.com/substrai/agentdeploy"
+Repository = "https://github.com/substrai/agentdeploy"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
