@@ -13,7 +13,7 @@ Usage:
         return "Hello!"
 """
 
-__version__ = "0.1.0"
+__version__ = "0.5.0"
 
 from agentdeploy.core.agent import agent, AgentConfig
 from agentdeploy.core.runtime import AgentRuntime, InvocationResult
