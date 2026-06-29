@@ -1,6 +1,6 @@
 {
   "name": "substrai-agentdeploy",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Zero-to-production AI agent deployment framework",
   "main": "index.js",
   "types": "index.d.ts",
